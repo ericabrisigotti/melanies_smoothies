@@ -21,7 +21,7 @@ my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT
 
 pd_df = my_dataframe.to_pandas()
 st.dataframe(pd_df)
-st.stop
+st.stop()
 
 
 # we are telling to choose up to 5 ingredients, but we are not enforcing that limit in the code 
